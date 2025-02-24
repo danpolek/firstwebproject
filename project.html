@@ -1,0 +1,318 @@
+<!--
+Project: Soccer Website
+Author: [Your Name]
+Date: February 2025
+Description: This website is about soccer, including its history, rules, famous players, and community involvement.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff0000;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Main Section */
+        main {
+            padding: 40px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: #ff0000;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* About Section */
+        #about img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Players Section */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #ff0000;
+            color: white;
+        }
+
+        td a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        td a:hover {
+            color: #ffcc00;
+        }
+
+        /* Form Styling */
+        form {
+            background-color: #eeeeee;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1.1rem;
+        }
+
+        form input[type="submit"] {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-size: 1.2rem;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #ffcc00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #ff0000;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            form {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the World of Soccer</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#players">Top Players</a></li>
+                <li><a href="#tournaments">Major Tournaments</a></li>
+                <li><a href="#highlights">Soccer Highlights</a></li>
+                <li><a href="#community">Join the Community</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Soccer</h2>
+            <img src="https://m.media-amazon.com/images/I/61z9BEq-90L._AC_SX679_.jpg" alt="Soccer Ball" width="400" height="350">
+            <p><strong>Soccer</strong> is the most popular sport in the world, played by millions globally. It is governed by FIFA and played professionally in leagues such as the <em>Premier League</em>, <em>La Liga</em>, and the <em>Bundesliga</em>.</p>
+        </section>
+        
+        <section id="history">
+            <h2>History of Soccer</h2>
+            <p>Soccer dates back to ancient times, with variations played in China and Mesoamerica. Modern soccer was formalized in <u>1863</u> in England, leading to the establishment of FIFA in 1904.</p>
+        </section>
+
+        <section id="players">
+            <h2>Top Players and Their Stats</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Goals</th>
+                        <th>Assists</th>
+                        <th>Appearances</th>
+                        <th>Highlights</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lionel Messi</td>
+                        <td>700+</td>
+                        <td>300+</td>
+                        <td>1000+</td>
+                        <td><a href="https://www.youtube.com/watch?v=3Xshv4kVxbs" target="_blank">Watch Highlights</a></td>
+                    </tr>
+                    <tr>
+                        <td>Cristiano Ronaldo</td>
+                        <td>800+</td>
+                        <td>250+</td>
+                        <td>1100+</td>
+                        <td><a href="https://www.youtube.com/watch?v=68tpgR_ujn8" target="_blank">Watch Highlights</a></td>
+                    </tr>
+                    <tr>
+                        <td>Neymar</td>
+                        <td>400+</td>
+                        <td>200+</td>
+                        <td>500+</td>
+                        <td><a href="https://www.youtube.com/watch?v=lHZZWmEUmTk" target="_blank">Watch Highlights</a></td>
+                    </tr>
+                    <tr>
+                        <td>Kylian Mbappe</td>
+                        <td>250+</td>
+                        <td>100+</td>
+                        <td>350+</td>
+                        <td><a href="https://www.youtube.com/watch?v=6cnTY2_YvcQ" target="_blank">Watch Highlights</a></td>
+                    </tr>
+                    <tr>
+                        <td>Erling Haaland</td>
+                        <td>200+</td>
+                        <td>50+</td>
+                        <td>250+</td>
+                        <td><a href="https://www.youtube.com/watch?v=dEKMQJLP6F4" target="_blank">Watch Highlights</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="tournaments">
+            <h2>Major Tournaments</h2>
+            <dl>
+                <dt><strong>FIFA World Cup</strong></dt>
+                <dd>Held every 4 years, the most prestigious tournament.</dd>
+                <dt><strong>UEFA Champions League</strong></dt>
+                <dd>The top club competition in Europe.</dd>
+                <dt><strong>Copa America</strong></dt>
+                <dd>South America's biggest international tournament.</dd>
+                <dt><strong>African Cup of Nations</strong></dt>
+                <dd>Africa's premier soccer competition.</dd>
+            </dl>
+        </section>
+
+        <section id="GOALS">
+            <h2>UNFORGETTABLE GOALS</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/r_lN52VwrBo?si=ypyRxPiQ3iKK8gU5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        </section>
+        
+        <section id="community">
+            <h2>Join Our Soccer Community</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Sign Up</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    
+                    <label for="position">Favorite Position:</label>
+                    <select id="position" name="position">
+                        <option value="forward">Forward</option>
+                        <option value="midfielder">Midfielder</option>
+                        <option value="defender">Defender</option>
+                        <option value="goalkeeper">Goalkeeper</option>
+                    </select>
+                    
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="5" max="99">
+                    
+                    <label for="team">Favorite Team:</label>
+                    <input type="text" id="team" name="team" placeholder="Enter your favorite team">
+                    
+                    <label for="feedback">Why do you love soccer?</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Share your thoughts"></textarea>
+                    
+                    <input type="submit" value="Join Now">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Soccer Website | All rights reserved.</p>
+    </footer>
+</body>
+</html>
