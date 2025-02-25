@@ -140,7 +140,7 @@ form input[type="submit"]:hover {
         <dl>
             <li><strong>FIFA World Cup:</strong> The biggest tournament in international soccer.</li>
             <li>The FIFA World Cup is the biggest soccer tournament in the world. It happens every four years and teams from all over the world compete to be the best. The tournament started in 1930, and since then, it has become a huge event watched by millions of people.
-Countries like Brazil, Germany, and Argentina have won the most World Cups. The World Cup lasts about a month, and the winning team gets a big trophy. It’s an exciting time for soccer fans everywhere, and it’s a chance to see the best players in the world show off their skills!</li>
+            Countries like Brazil, Germany, and Argentina have won the most World Cups. The World Cup lasts about a month, and the winning team gets a big trophy. It’s an exciting time for soccer fans everywhere, and it’s a chance to see the best players in the world show off their skills!</li>
             <br>
             <li><strong>UEFA Champions League:</strong> The top club competition in Europe.</li>
 
@@ -165,13 +165,15 @@ Countries like Brazil, Germany, and Argentina have won the most World Cups. The 
 <!--form section-->
 <section id="community">
     <h2>JOIN US</h2>
-    <form action="#" method="POST">
+    <form action="http://127.0.0.1:5500/page%203.html" method="GET">  <!-- Redirects to page3.html -->
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
-<br>
+        <br>
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="Enter your email" required>
-<br>
+        <br>
+
         <label for="position">Favorite Position:</label>
         <select id="position" name="position">
             <option value="forward">Forward</option>
@@ -179,22 +181,28 @@ Countries like Brazil, Germany, and Argentina have won the most World Cups. The 
             <option value="defender">Defender</option>
             <option value="goalkeeper">Goalkeeper</option>
         </select>
-<br>
+        <br>
+
         <label for="age">Age:</label>
         <input type="number" id="age" name="age" min="5" max="99">
-<br>
+        <br>
+
         <label for="team">Favorite Team:</label>
         <input type="text" id="team" name="team" placeholder="Enter your favorite team">
-<br>
+        <br>
+
         <label for="feedback">Why do you love soccer?</label>
         <textarea id="feedback" name="feedback" rows="4" placeholder="Share your thoughts"></textarea>
-<br>
-        <a href="http://127.0.0.1:5500/page%203.html"><input type="submit" value="Join Now"></a> <a href="https://youtu.be/xvFZjo5PgG0">IF YOU DONT CLICK HERE YOU WILL BE HOMELESS</a>
+        <br>
+
+        <input type="submit" value="Join Now"> <!-- Redirects to page3.html -->
     </form>
+
+    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Watch an amazing soccer video!</a></p>
 </section>
 
-    <footer>
-        <p> 2025 Soccer Trophies</p>
-    </footer>
+<footer>
+    <p> 2025 Soccer Trophies</p>
+</footer>
+    
 </body>
-</html>
